@@ -1,0 +1,85 @@
+#include<stdio.h>
+#include<iostream>
+#include <cstring>
+#include<math.h>
+#include <string> 
+using namespace std;
+
+
+int main(){
+    
+    
+long long int n,j=0,cnt2=0,cnt1=1,t=0,a,k=0,n1=0,n2,sav,e,score,index=0,r=0,sum=0,s=0;
+      long long int x[100000],y[10000],w,bc,wc,z,c;
+
+    int min=1000,mins=1000;
+
+    char str[1000],str1[1000][1000],str2[1000][1000]; 
+     
+   int len; 
+
+    long long int d,i,cnt=0;
+
+//    printf("enter value");
+    scanf("%d",&n);
+    
+ //   printf("enter value");
+//    scanf("%d",&d);
+    
+
+   for(i=0;i<n;i++){
+       
+       
+       cin>>x[i];
+       
+   }
+     
+     
+     
+     for(i=0;i<n;i++){
+         
+     
+         
+         for(j=i+1;j<n;j++){
+             
+     //        printf("okay2");
+             
+             if(x[i]==x[j]){
+             
+             
+             
+             a=j-i;
+             
+             if(min>a){
+                 
+                 min=a;
+                 
+             }
+             
+             
+             }
+             
+             
+            
+             
+         }
+         
+    
+     }
+     
+     if(min==1000){
+         
+         cout<<"-1";
+         
+     }else{
+         
+             cout<<min;
+     }
+     
+ 
+
+   
+ 
+
+    
+}
